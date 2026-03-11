@@ -23,18 +23,17 @@ function createWindow() {
 
 ipcMain.on("abrir-janela", (event, pagina) => {
 
-    const novaJanela = new BrowserWindow({
+    console.log("abrindo:", pagina)
 
+    const novaJanela = new BrowserWindow({
         width: 600,
         height: 600,
         parent: mainWindow,
         modal: true,
-
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
             contextIsolation: true
         }
-
     })
 
     novaJanela.loadFile(
