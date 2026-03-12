@@ -43,3 +43,7 @@ ipcMain.on("abrir-janela", (event, pagina) => {
 })
 
 app.whenReady().then(createWindow)
+
+const addon = require(
+    path.join(__dirname, "../../build/Release/addon.node")
+)
