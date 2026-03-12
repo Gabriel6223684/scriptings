@@ -11,13 +11,13 @@ function createWindow() {
         height: 600,
 
         webPreferences: {
-            preload: path.join(__dirname, "preload.js"),
+            preload: path.join(__dirname, "../../electron/preload.js"),
             contextIsolation: true
         }
 
     })
 
-    mainWindow.loadFile(path.join(__dirname, "../index.html"))
+    mainWindow.loadFile(path.join(__dirname, "index.html"))
 
 }
 

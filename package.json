@@ -2,7 +2,7 @@
   "name": "scriptings",
   "version": "1.0.0",
   "description": "",
-  "main": "electron/main.js",
+  "main": "src/main/index.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/Gabriel6223684/scriptings#readme",
   "devDependencies": {
-    "electron": "^40.8.0"
+    "electron": "^40.8.0",
+    "node-gyp": "^12.2.0"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.6.0"
   }
 }
